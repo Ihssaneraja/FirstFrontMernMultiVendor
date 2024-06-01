@@ -1,0 +1,81 @@
+/* Slider custom styles */
+.slick-slide {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .slick-prev, .slick-next {
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .slick-prev:before, .slick-next:before {
+    font-size: 20px;
+    color: #333;
+    
+  }
+  
+  .slick-dots {
+    bottom: -30px;
+  }
+  
+  .slick-dots li button:before {
+    font-size: 12px;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #333;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+  
+    .slick-prev, .slick-next {
+      top: calc(50% - 15px); /* Adjust button position for smaller screens */
+    }
+  
+    .slick-prev:before, .slick-next:before {
+      font-size: 14px; /* Decrease font size of buttons for smaller screens */
+    }
+  
+    .slick-dots {
+      bottom: -10px;
+    }
+  
+    .slick-dots li button:before {
+      font-size: 8px;
+    }
+  
+    .slick-slide {
+      padding: 5px; /* Adjust padding for smaller screens */
+    }
+  
+  
+  
+  
+  
+  
+    .slick-prev, .slick-next {
+      top: calc(50% - 20px);
+      transform: none;
+    }
+  
+    .slick-prev:before, .slick-next:before {
+      font-size: 16px;
+    }
+  
+    .slick-dots {
+      bottom: -20px;
+    }
+  
+    .slick-dots li button:before {
+      font-size: 10px;
+    }
+  }
+  
+  
+  
+  
+  

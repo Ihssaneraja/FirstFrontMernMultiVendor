@@ -1,0 +1,204 @@
+/** @format */
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Dirtyline 36Daysoftype 2022";
+  src: url('path/to/Dirtyline-36Daysoftype-2022.woff2') format('woff2'),
+       url('path/to/Dirtyline-36Daysoftype-2022.woff') format('woff');
+  /* Add additional font formats if available */
+}
+
+section {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  color: oldlace;
+}
+section > h1 {
+  font-size: 200px;
+  padding: 50px;
+}
+
+.slider-container {
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+  min-width: 100%;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.slider-container > div {
+  width: 400px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f6d13a;
+  border: 1px solid black;
+}
+.slider-container > div:nth-child(1) {
+  background: url(public/logo/img1.jpg) no-repeat center center;
+  /* background-size: cover; */
+  max-width: 8rem;
+  height: 25rem;
+  opacity: 0.8;
+
+  
+}
+
+.slider-container > div:nth-child(2) {
+  background: url(public/logo/img2.jpg) no-repeat center center;
+  max-width: 8rem;
+  height: 25rem;
+  opacity: 0.8;
+
+}
+.slider-container > div:nth-child(3) {
+  background: url(public/logo/img3.jpg) no-repeat center center;
+  max-width: 8rem;
+  height: 25rem;
+  opacity: 0.8;
+}
+
+
+
+
+
+
+.slider-container > div:nth-child(1):hover,
+.slider-container > div:nth-child(2):hover,
+.slider-container > div:nth-child(3):hover {
+  /* Add your hover styles here */
+  opacity: 1; /* For example, reduce opacity on hover */
+  cursor: pointer; /* Change cursor to indicate interactivity */
+}
+
+
+.slider-container > div > h1 {
+  font-size: 100px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-section {
+  position: relative;
+}
+
+.categorieImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+}
+
+
+
+.imageone {
+  max-width: 10rem;
+  height: 20rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow to the image */
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow to the transition */
+} 
+ .imagethree {
+  width: calc(16.66% - 10px); /* Adjust the width as needed for six images in a row */
+  margin: 5px;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the image covers the given area */
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow to the transition */
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow to the image */
+}
+
+.imagetwo {
+  width: calc(12% - 10px); /* Make this a bit smaller */
+  margin: 6px;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the image covers the given area */
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow to the transition */
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow to the image */
+}
+
+
+ .imagefour{
+  width: calc(12% - 10px); /* Make this a bit smaller */
+  margin: 5px;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the image covers the given area */
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow to the transition */
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow to the image */
+ }
+
+.imagethree {
+  max-width: 10rem;
+  height: 25rem;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.titleCategori {
+ 
+  padding: 10px;
+}
+
+/* Hover Effects */
+.imageone:hover, .imagetwo:hover, .imagethree:hover {
+transform: scale(1.05); /* Enlarge the image slightly */
+opacity: 0.9; /* Slightly reduce the opacity */
+box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add a shadow */
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+.categorieImages {
+  justify-content: space-evenly; /* Adjust alignment on smaller screens */
+}
+
+.imageone, .imagetwo, .imagethree, .imagefour {
+  width: 45%; /* Adjust width for two images per row */
+  height:15.5rem;
+}
+}
+
+@media screen and (max-width: 480px) {
+.imageone, .imagetwo, .imagethree, .imagefour {
+  width: 100%; /* Adjust width for one image per row */
+}
+}
+
+.text-overlay {
+text-align: center;
+}
+
+.titleCategori {
+padding: 10px;
+}
+
+
+
+
+
+
+

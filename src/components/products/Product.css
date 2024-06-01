@@ -1,0 +1,102 @@
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* .gallery-container{
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    transform: translate(-25%,-25%);
+    width: 150vw;
+    height: 150vh;
+} */
+
+.gallery-container {
+    position: relative; /* Change position to relative */
+    width: 100%; /* Set width to 100% */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 50px 0; /* Adjust padding as needed */
+}
+.gallery{
+    height: 100%;
+    width: 100%;
+    margin: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+}
+.gallery-image {
+    width: 100%; /* Set width to 100% for responsiveness */
+    height: auto; /* Allow height to adjust proportionally */
+    max-width: 500px; /* Set maximum width for larger screens */
+    max-height: 500px; /* Set maximum height for larger screens */
+    margin: 20px; /* Adjust margin for spacing between images */
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: gray;
+    filter: grayscale(0.5);
+}
+.gallery-image1{
+    background-image: url(public/Product/image1.jpg);
+    width: 400px;
+    height: 800px;
+
+}
+.gallery-image2{
+    background-image: url(public/Product/image2.jpg);
+    margin: 0;
+}
+.gallery-image3{
+    background-image: url(public/Product/image3.jpg);
+    height: 600px;
+    width: 400px;
+    margin: 0;
+
+}
+.gallery-image4{
+    background-image: url(public/Product/image4.jpg);
+
+}
+.gallery-image5{
+    background-image: url(public/Product/image5.jpg);
+}
+.gallery-image6{
+    background-image: url(public/Product/image6.jpg);
+    width: 600px;
+    height: 800px;
+    margin: 0;
+}
+.gallery-image7{
+    background-image: url(public/Product/image7.jpg);
+    height: 300px;
+    width: 300px;
+    margin: 0;
+}
+.gallery-image8{
+
+    background-image: url(public/Product/image8.jpg);
+    margin: 0;
+}
+.gallery-image9{
+    background-image: url(public/Product/image9.jpg);
+    height: 800px;
+    margin: 0;
+}
+.gallery-image10{
+    background-image: url(public/Product/image10.jpg);
+    height: 200px;
+    width: 200px;
+}
+.gallery-image11{
+    background-image: url(public/Product/image11.jpg);
+    height: 300px;
+    margin: 0;
+    width: 600px;
+}
+.gallery-image12{
+    background-image: url(public/Product/image12.jpg);
+    margin: 0;
+}
