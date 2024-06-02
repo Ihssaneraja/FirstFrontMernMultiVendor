@@ -1,4 +1,4 @@
-<span style="border: 2px solid black; padding: 10px;font-size:25px;"> Multi Vendor Ecommerce</span>
+# <span style="border: 2px solid black; padding: 10px;"> Multi Vendor Ecommerce </span>
 
 <ul>
     <li>Multi Vendor ecommerce website for online shopping, it allows multi vendor features to allow sellers to sell on this website.</li>
