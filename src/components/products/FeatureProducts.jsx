@@ -161,7 +161,7 @@ const FeatureProducts = ({ products }) => {
                 </li>
                 <Link
                   to={`/product/details/${p.slug}`}
-                  className=" action-box border border-black shadow p-2 w-[38px] h-[38px] cursor-pointer opacity-50 flex-grow flex justify-center items-center bg-grayForc transition rounded"
+                  className=" action-box border border-black p-2 w-[38px] h-[38px] cursor-pointer opacity-50 flex-grow flex justify-center items-center bg-grayForc transition rounded"
                 >
                   <IoEyeSharp />
                 </Link>{" "}
